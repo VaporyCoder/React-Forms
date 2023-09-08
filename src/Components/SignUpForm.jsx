@@ -7,7 +7,11 @@ export default function SignUpForm() {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    console.log('yurrr');
+    try {
+        
+    } catch (error) {
+        setError(error.message)
+    }
   };
 
   return (
